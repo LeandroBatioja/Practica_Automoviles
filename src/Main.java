@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
@@ -31,6 +32,7 @@ public class Main {
 
         //Usando El constructor
         Automovil kia = new Automovil("Kia Motors", "Europa Sportaje 2024", "Azul Marino", 1.6, 4);
+
         //Concatenar el objeto al enum que se creo - DESPUES DEL CONSTRUCTOR
         kia.setTipo(TipoAutomovil.SEDAN);
 
@@ -78,10 +80,58 @@ public class Main {
         CarreElectrico.Acelerar();
 
 
+        // ==========================
+        // Ejemplo usando HashMap
+        // ==========================
+
+        // Crearemos un Hashmap en donde la clave es el modelo y el valor es el automovil
+        HashMap<String, Automovil> automovilHashMap = new HashMap<>();
+
+        //Guardamos los objetos en el HashMap
+        automovilHashMap.put(kia.getModelo(), kia);
+        automovilHashMap.put(dfsk.getModelo(), dfsk);
+        automovilHashMap.put(CarreCombustion.getModelo(), CarreCombustion);
+        automovilHashMap.put(CarreElectrico.getModelo(), CarreElectrico);
+
+
+        // Mostramos los autos almacenados
+        System.out.println("\n======== Lista de autos que hay en el HashMap");
+        for (String clave : automovilHashMap.keySet()) {
+            System.out.println("Clave: " + clave);
+            System.out.println(automovilHashMap.get(clave).toString());
+            System.out.println("-----------------------------------------------");
+        }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        //Ejemplo: buscar un auto por su modelo
+//        String buscar = "Glory";
+//        System.out.println("\nBuscando auto con modelo '" + buscar + "'...");
+//        Automovil encontrado = automovilHashMap.get(buscar);
+//        if (encontrado != null) {
+//            System.out.println("Encontrado: " + encontrado.toString());
+//        } else {
+//            System.out.println("No existe ese auto en el HashMap");
+//        }
     }
 }

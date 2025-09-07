@@ -14,8 +14,7 @@ public class Automovil {
      */
 
     /*
-        Para exponer el Dia Lunes - Uno cada Uno
-        Investigar, ¿QUE SON?, TIPO DE MEMORIA Y VELOCIDAD DE EJECUCION
+        Investigar, ¿QUE SON?, TIPO DE MEMORIA Y VELOCIDAD DE EJECUCION - DE LOS SIGUIENTES TEMAS
             Hashmaps
             Treemap
             Linkedhashmap
