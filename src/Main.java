@@ -46,11 +46,13 @@ public class Main {
         System.out.print("\n========================\n");
 
         Automovil dfsk = new Automovil("Dong Feng", "Glory", "Blanco", 1.6, 4);
+        dfsk.setTipo(TipoAutomovil.HATCHBACK);
 
         System.out.println("auto.fabricante: " + dfsk.getFabricante());
         System.out.println("auto.modelo: " + dfsk.getModelo());
         System.out.println("auto.cilindraje: " + dfsk.getCilindraje());
         System.out.println("auto.color: " + dfsk.getColor());
+        System.out.println("auto.tipo: " + dfsk.getTipo().getNombre());
 
         //Con toString
         System.out.print("\n========================\n");
@@ -92,6 +94,7 @@ public class Main {
         automovilHashMap.put(dfsk.getModelo(), dfsk);
         automovilHashMap.put(CarreCombustion.getModelo(), CarreCombustion);
         automovilHashMap.put(CarreElectrico.getModelo(), CarreElectrico);
+
 
 
         // Mostramos los autos almacenados

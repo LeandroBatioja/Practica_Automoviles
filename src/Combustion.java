@@ -36,5 +36,9 @@ public class Combustion extends Automovil{
 
     /*
         El get lo obtiene y el set lo cambia
+
+
+        Usa set si quieres modificar el valor al guardarlo.
+        Usa get si quieres modificar el valor solo al mostrarlo.
      */
 }
